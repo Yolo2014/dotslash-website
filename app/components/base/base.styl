@@ -1,0 +1,36 @@
+html,body,ul,h1,h2,h3,h4
+  margin 0
+  padding 0
+  
+html,body
+  height 100%
+  
+@media (min-width: 970px)
+  .container 
+    width 1000px
+
+a
+  text-decoration none
+  &:hover
+    text-decoration none
+
+sizes = {
+  none: 0px
+  xs: 1px
+  sm: 3px
+  md: 5px
+  lg: 15px
+  xl: 20px
+  xxl: 30px
+  xxxl: 50px
+}
+
+for position in top left right bottom
+  for size, value in sizes
+    .margin-{position}-{size} 
+      margin-{position} value !important
+
+for position in top left right bottom
+  for size, value in sizes
+    .padding-{position}-{size} 
+      padding-{position} value !important
