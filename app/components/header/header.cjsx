@@ -11,7 +11,7 @@ module.exports = React.createClass
         <div className="pull-right">
           <div className="phone margin-top-lg pull-right"> CALL 0756 8585885 </div>
           <div className="clearfix"></div>
-          <ul className="menu margin-top-xl pull-right">
+          <ul className="pull-right">
             <li><Router.Link activeClassName="active" to='Home'>HOME</Router.Link></li>
             <li><Router.Link activeClassName="active" to='About'>ABOUT</Router.Link></li>
             <li><Router.Link activeClassName="active" to='Bussiness'>DESIGN & DEVELOPMENT</Router.Link></li>
